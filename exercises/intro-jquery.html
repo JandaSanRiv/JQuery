@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+</head>
+
+<body>
+<p id="parrafo1">Este es un parrado de HTML</p>
+
+    <!-- Formas de cargar el jQuery en la pagina web -->
+    <!-- <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // $(document).ready(function(){// ANNONIMOUS FUNCTION
+        //     $("#parrafo1").click(function(){
+        //         $(this).hide();
+        //     })
+        // });
+
+        $(() =>{// ARROW FUNCTION
+            $("#parrafo1").click(function(){
+                $(this).hide();
+            })
+
+        })
+    </script>
+</body>
+
+</html>

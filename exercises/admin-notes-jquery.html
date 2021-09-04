@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Easy Notes</title>
+    <link rel="stylesheet" href="./admin-notes-jquery.css">
+</head>
+
+<body>
+    <div id="mainContent">
+        <p id="parrafo1">Node Easy notes</p>
+
+        <div id="divInfoNote" style="display:none">
+            <div><span id="spTitInfo"></span>
+            </div>
+            <div id="divInputs" style="display:none">
+                <div class="form-sec" style="display: none;">
+                    <label for="txtId" class="lblInp">Id</label>
+                    <input type="text" id="txtId" class="txtInp txtField" disabled readonly>
+                </div>
+                <div class="form-sec">
+                    <label for="txtTitle" class="lblInp">Title:</label>
+                    <input type="text" id="txtTitle" class="txtInp txtField">
+                </div>
+                <div class="form-sec">
+                    <label for="txtContent" class="lblInp">Content:</label>
+                    <input type="text" id="txtContent" class="txtInp txtField">
+                </div>
+                <div class="form-sec">
+                    <label for="txtCreatedAt" class="lblInp">Created at:</label>
+                    <input type="text" id="txtCreatedAt" class="txtInp txtField" disabled readonly>
+                </div>
+                <div class="form-sec">
+                    <label for="txtUpdatedAt" class="lblInp">Updated at:</label>
+                    <input type="text" id="txtUpdatedAt" class="txtInp txtField" disabled readonly>
+                </div>
+                <button id="btnSendModify" style="display:none">Modify</button>
+                <button id="btnSendAdd" style="display:none">Save</button>
+            </div>
+        </div>
+        <div>
+
+            <button id="btnAdd">Add Note</button>
+            <table id="tblNotes">
+                <thead>
+                    <tr>
+                        <th class="tdNum">Num</th>
+                        <th class="tdId">Id</th>
+                        <th class="tdTitle">Title</th>
+                        <th class="tdContent">Content</th>
+                        <th class="tdCreated">Created at</th>
+                        <th class="tdUpdated">Updated at</th>
+                        <th colspan="2"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbNotes">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <!-- "_id": "6130178a43bc539828e71b56",
+    "title": "juan",
+    "content": "martinezx",
+    "createdAt": "2021-09-02T00:15:06.045Z",
+    "updatedAt": "2021-09-02T00:15:06.045Z",
+    "__v": 0 -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./admin-notes-jquery.js"></script>
+
+
+</body>
+
+</html>

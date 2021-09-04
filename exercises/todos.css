@@ -1,0 +1,46 @@
+td.completed {
+    background-color: #e9fbeb;
+    color: #355ba2;
+    text-align: center;
+}
+
+td.uncompleted {
+    background-color: #ffefd1;
+    color: #a25620;
+    text-align: center;
+}
+
+thead {
+    background-color: #25418e;
+    color: #dde8ef;
+}
+#tblTodos{
+border-collapse: collapse;
+}
+
+#tbTodos td {
+    border: 1px solid #aabae6;
+}
+
+#tblTodos th {
+    border: 1px solid #2d2d50;
+}
+#mainContent{
+    padding: 10px;
+}
+
+p#parrafo1 {
+    color: #3c5bf1;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#tblTodos td, #tblTodos th {
+    padding: 3px;
+}
+
+.selected{
+    background-color:  #cddbe8!important;
+}

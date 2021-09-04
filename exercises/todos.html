@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="./todos.css">
+</head>
+
+<body>
+    <div id="mainContent">
+        <div class="divTools">
+            <label class="lblText">Id</label>
+            <input type="number" id="txtId">
+            <button id="btnSearchById">Buscar por Id</button>
+        </div>
+        
+    <p id="parrafo1" clave="123">Lista TODOS</p>
+    <table id="tblTodos">
+        <thead>            
+        <tr>
+            <th class="tdId">Id</th>
+            <th class="tdTitle">Title</th>
+            <th class="tdCompleted">Completed</th>
+        </tr>
+        </thead>
+        <tbody id="tbTodos">
+        </tbody>
+    </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./todos.js"></script>
+
+   
+</body>
+
+</html>
+
+<!-- "userId": 1,
+        "id": 1,
+        "title": "delectus aut autem",
+        "completed": false -->

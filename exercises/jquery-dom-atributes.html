@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+</head>
+
+<body>
+    <p id="parrafo1" clave="123">Este es un parrado de HTML</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(()=>{
+            console.log($('#parrafo1')[0].clave);
+            console.log($('#parrafo1').attr("clave"))
+            console.log($('#parrafo1')[0].getAttribute("clave"));
+            console.log($('p')[0].getAttribute('clave'));
+        });
+    </script>
+    <!-- <script>
+        $(() => {
+            alert($('#parrafo1')[0].clave));
+        });-->
+
+    </script> 
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+
+button{
+    
+    border-radius: 3px;
+    border: 1px solid #acb9ce;
+    padding: 3px;
+}
+td.completed {
+    background-color: #e9fbeb;
+    color: #355ba2;
+    text-align: center;
+}
+
+td.uncompleted {
+    background-color: #ffefd1;
+    color: #a25620;
+    text-align: center;
+}
+
+thead {
+    background-color: #25418e;
+    color: #dde8ef;
+}
+#tblNotes{
+border-collapse: collapse;
+}
+
+#tbNotes td {
+    border: 1px solid #aabae6;
+}
+
+#tblNotes th {
+    border: 1px solid #2d2d50;
+}
+#mainContent{
+    padding: 10px;
+}
+
+p#parrafo1 {
+    color: #3c5bf1;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#tblNotes td, #tblNotes th {
+    padding: 3px;
+}
+
+.selected{
+    background-color:  #cddbe8!important;
+}
+
+div#divInfoNote {
+    display: inline-block;
+    width: 60%;
+    max-width: 600px;
+    padding: 16px;
+    border: 1px solid #e6f3e6;
+    background-color: #f7f7f7;
+    margin: 5px;
+}
+
+.form-sec {
+    display: inline-block;
+    width: 36%;
+    padding: 3px;
+}
+
+span#spTitInfo {
+    font-size: 18px;
+    color: #222ca7;
+    font-weight: bold;
+    display: inline-block;
+}
+
+button#btnAdd, button#btnSendAdd, button#btnSendModify {
+    background-color: #3845e6;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 8px;
+}
+
+button.btnDelete {
+    background-color: #fff4f4;
+    border: 1px solid #d8a8a8;
+    color: #de1e5c;
+    padding: 2px;
+}
+
+button.btnModify {
+    background-color: #b8cee8;
+    border: 1px solid #89919c;
+    color: #2f4a50;
+    padding: 2px;
+}
+
+
+label.lblInp {
+    color: #1f336d;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+input#txtTitle {
+    font-size: 14px;
+}

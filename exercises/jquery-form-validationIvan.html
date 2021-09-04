@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./jquery-form-validation.css" type="text/css">
+</head>
+
+<body>
+    <form action="/my-handling-form-page" method="post" id="frmEjemplo">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit" id="btnSubmit">Send your message</button>
+            </li>
+            <ul id="errores"></ul>
+        </ul>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(() => {
+            let errores = [];
+            $("#btnSubmit").click(function (event) {
+                validaCampos();
+                event.preventDefault();
+            });
+
+            function validaCampos() {
+
+                errores = [];
+
+                $("#errores").empty();
+                $("#frmEjemplo input, #frmEjemplo textarea").each(function () {
+                    if (!$(this).val()) {
+                        agregaError($(this).attr("name"));
+                    }
+                });
+
+
+                errores.forEach((errorText) => {
+                    let newError = `<li>${errorText}</li>`
+                    $("#errores").append(newError);
+                });
+
+                if (errores.length == 0) {
+                    alert('Mensaje enviado');
+                    $("#form :input").val("");
+                }
+
+                $(".error").css("color", "red").css("backgroundColor", "yellow");
+
+            }
+
+            function agregaError(campo) {
+                errores.push(`Falta  agregar el ${campo}`);
+            }
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
